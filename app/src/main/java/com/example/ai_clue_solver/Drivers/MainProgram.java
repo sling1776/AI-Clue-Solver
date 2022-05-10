@@ -1,13 +1,11 @@
-package Drivers;
+package com.example.ai_clue_solver.Drivers;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import Cards.*;
-import Players.Envelope;
-import Players.Player;
-import Players.PlayerStateStack;
-import Players.Player.Knowledge;
-import Rummor.Rummor;
+import com.example.ai_clue_solver.Cards.*;
+import com.example.ai_clue_solver.Players.*;
+import com.example.ai_clue_solver.Rummor.Rummor;
+import com.example.ai_clue_solver.Players.Player.Knowledge;
 
 public class MainProgram {
     ArrayList<Card> cards = new ArrayList<>();

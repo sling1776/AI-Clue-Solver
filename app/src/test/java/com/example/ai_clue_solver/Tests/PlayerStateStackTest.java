@@ -1,14 +1,13 @@
-package Tests;
+package com.example.ai_clue_solver.Tests;
 
 import java.util.HashMap;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import Cards.Person;
-import Players.Player;
-import Players.PlayerStateStack;
-import Players.Player.Knowledge;
+import com.example.ai_clue_solver.Cards.*;
+import com.example.ai_clue_solver.Players.Player.Knowledge;
+import com.example.ai_clue_solver.Players.*;
 
 public class PlayerStateStackTest {
     

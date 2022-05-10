@@ -1,10 +1,9 @@
-package Tests;
+package com.example.ai_clue_solver.Tests;
 
 import org.junit.Test;
 import org.junit.Assert;
+import com.example.ai_clue_solver.Cards.*;
 
-import Cards.Thing;
-import Cards.Card;
 
 public class ThingTest {
     @Test

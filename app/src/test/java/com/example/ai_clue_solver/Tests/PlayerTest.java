@@ -1,15 +1,11 @@
-package Tests;
+package com.example.ai_clue_solver.Tests;
 
 import org.junit.Test;
 
-import Cards.Card;
-import Cards.Person;
-import Cards.Place;
-import Cards.Thing;
-import Cards.Place.Value;
-import Players.Player;
-import Players.Player.Knowledge;
-import Rummor.Rummor;
+import com.example.ai_clue_solver.Cards.*;
+import com.example.ai_clue_solver.Players.Player.Knowledge;
+import com.example.ai_clue_solver.Players.*;
+import com.example.ai_clue_solver.Rummor.Rummor;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -268,7 +264,7 @@ public class PlayerTest {
         cs = p.checkRummors();
         Assert.assertEquals(0, cs.size());
         Assert.assertEquals(2, p.getRummors().size());
-        Assert.assertEquals(Knowledge.DONTKNOW, p.getCardStatus(Value.BALLROOM));
+        Assert.assertEquals(Knowledge.DONTKNOW, p.getCardStatus(Place.Value.BALLROOM));
         Assert.assertEquals(Knowledge.DONTKNOW, p.getCardStatus(Thing.Value.CANDLESTICK));
         Assert.assertEquals(Knowledge.DONTKNOW, p.getCardStatus(Thing.Value.WRENCH));
 

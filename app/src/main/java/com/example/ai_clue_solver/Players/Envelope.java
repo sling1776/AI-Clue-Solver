@@ -1,14 +1,11 @@
-package Players;
+package com.example.ai_clue_solver.Players;
 
 import java.util.ArrayList;
 import java.util.NoSuchElementException;
 import java.util.Random;
 
-import Cards.Card;
-import Cards.Person;
-import Cards.Place;
-import Cards.Thing;
-import Rummor.Rummor;
+import com.example.ai_clue_solver.Cards.*;
+import com.example.ai_clue_solver.Rummor.Rummor;
 
 public class Envelope extends Player {
     

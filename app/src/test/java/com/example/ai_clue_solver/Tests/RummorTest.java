@@ -1,4 +1,4 @@
-package Tests;
+package com.example.ai_clue_solver.Tests;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -6,11 +6,8 @@ import java.util.Random;
 import org.junit.Before;
 import org.junit.Test;
 
-import Cards.Card;
-import Cards.Person;
-import Cards.Place;
-import Cards.Thing;
-import Rummor.Rummor;
+import com.example.ai_clue_solver.Cards.*;
+import com.example.ai_clue_solver.Rummor.Rummor;
 import org.junit.Assert;
 
 public class RummorTest {

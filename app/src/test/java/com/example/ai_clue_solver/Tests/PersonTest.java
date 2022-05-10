@@ -1,9 +1,8 @@
-package Tests;
+package com.example.ai_clue_solver.Tests;
 
 import org.junit.Test;
 
-import Cards.Card;
-import Cards.Person;
+import com.example.ai_clue_solver.Cards.*;
 
 import org.junit.Assert;
 

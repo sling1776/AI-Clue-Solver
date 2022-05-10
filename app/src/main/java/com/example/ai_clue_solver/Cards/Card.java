@@ -1,4 +1,4 @@
-package Cards;
+package com.example.ai_clue_solver.Cards;
 public class Card {
 
     public enum Kind{

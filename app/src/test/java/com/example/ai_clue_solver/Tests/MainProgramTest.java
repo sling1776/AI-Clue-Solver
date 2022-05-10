@@ -1,19 +1,15 @@
-package Tests;
+package com.example.ai_clue_solver.Tests;
 
 import java.util.HashMap;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import Cards.Card;
-import Cards.Person;
-import Cards.Place;
-import Cards.Thing;
-import Cards.Person.Value;
-import Drivers.MainProgram;
-import Players.Player;
-import Players.Player.Knowledge;
-import Rummor.Rummor;
+import com.example.ai_clue_solver.Cards.*;
+import com.example.ai_clue_solver.Drivers.MainProgram;
+import com.example.ai_clue_solver.Players.Player.Knowledge;
+import com.example.ai_clue_solver.Players.*;
+import com.example.ai_clue_solver.Rummor.Rummor;
 
 public class MainProgramTest {
     @Test
@@ -24,7 +20,7 @@ public class MainProgramTest {
         try {
             h = MainProgram.makePlayersSet(pcc, pn);
         } catch (Exception e) {
-            Assert.assertTrue(false); //There was an exception while making the hash set.
+            Assert.fail(); //There was an exception while making the hash set.
         }
 
         Assert.assertEquals("Envelope", h.get(-1).getName());
@@ -96,7 +92,7 @@ public class MainProgramTest {
         mp.addCardToPlayer(Person.Value.GREEN, 0);
         mp.addCardToPlayer(Place.Value.BALLROOM, 1);
         mp.addCardToPlayer(Thing.Value.CANDLESTICK, 2);
-        mp.addCardToPlayer(new Person(Value.PLUM), 3);
+        mp.addCardToPlayer(new Person(Person.Value.PLUM), 3);
         mp.addCardToPlayer(new Place(Place.Value.BILLIARDROOM), 3);
         mp.addCardToPlayer(new Thing(Thing.Value.DAGGER), 1);
 
@@ -180,8 +176,8 @@ public class MainProgramTest {
         Integer[] pcc = {1,2,3,4,5};
         MainProgram mp = new MainProgram(pcc);
 
-        Card[] list1 = {new Person(Value.PLUM), new Place(Cards.Place.Value.BALLROOM), new Thing(Thing.Value.LEADPIPE)};
-        Card[] list2 = {new Person(Value.GREEN), new Place(Cards.Place.Value.DININGROOM)};
+        Card[] list1 = {new Person(Person.Value.PLUM), new Place(Place.Value.BALLROOM), new Thing(Thing.Value.LEADPIPE)};
+        Card[] list2 = {new Person(Person.Value.GREEN), new Place(Place.Value.DININGROOM)};
 
         mp.addCardsToPlayer(list1, 4);
 
@@ -227,7 +223,7 @@ public class MainProgramTest {
         mp.removeCardFromPlayer(Person.Value.GREEN, 0);
         mp.removeCardFromPlayer(Place.Value.BALLROOM, 1);
         mp.removeCardFromPlayer(Thing.Value.CANDLESTICK, 2);
-        mp.removeCardFromPlayer(new Person(Value.PLUM), 3);
+        mp.removeCardFromPlayer(new Person(Person.Value.PLUM), 3);
         mp.removeCardFromPlayer(new Place(Place.Value.BILLIARDROOM), 3);
         mp.removeCardFromPlayer(new Thing(Thing.Value.DAGGER), 1);
 
@@ -267,7 +263,7 @@ public class MainProgramTest {
         Integer[] pcc = {1,2,3,4,5};
         MainProgram mp = new MainProgram(pcc);
 
-        Card[] list1 = {new Person(Value.PLUM), new Place(Cards.Place.Value.BALLROOM), new Thing(Thing.Value.LEADPIPE)};
+        Card[] list1 = {new Person(Person.Value.PLUM), new Place(Place.Value.BALLROOM), new Thing(Thing.Value.LEADPIPE)};
 
         mp.removeCardsFromPlayer(list1, 4);
 

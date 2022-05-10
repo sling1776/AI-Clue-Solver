@@ -1,13 +1,13 @@
-package Drivers;
+package com.example.ai_clue_solver.Drivers;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Scanner;
 
-import Cards.*;
-import Rummor.Rummor;
-import Players.*;
-import Players.Player.Knowledge;
+import com.example.ai_clue_solver.Cards.*;
+import com.example.ai_clue_solver.Rummor.Rummor;
+import com.example.ai_clue_solver.Players.*;
+import com.example.ai_clue_solver.Players.Player.Knowledge;
 
 
 public class ConsoleDriver {

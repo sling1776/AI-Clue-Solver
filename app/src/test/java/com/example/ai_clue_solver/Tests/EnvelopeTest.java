@@ -1,4 +1,4 @@
-package Tests;
+package com.example.ai_clue_solver.Tests;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -7,10 +7,10 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import Cards.*;
-import Players.Envelope;
-import Players.Player.Knowledge;
-import Rummor.Rummor;
+import com.example.ai_clue_solver.Cards.*;
+import com.example.ai_clue_solver.Players.*;
+import com.example.ai_clue_solver.Players.Player.Knowledge;
+import com.example.ai_clue_solver.Rummor.Rummor;
 
 public class EnvelopeTest {
     ArrayList<Card> cards = new ArrayList<>();

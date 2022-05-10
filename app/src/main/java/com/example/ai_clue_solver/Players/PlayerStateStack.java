@@ -1,4 +1,4 @@
-package Players;
+package com.example.ai_clue_solver.Players;
 import java.util.HashMap;
 import java.util.Stack;
 
@@ -18,8 +18,10 @@ public class PlayerStateStack {
         
         for(Integer i: state.keySet()){
             Player p = state.get(i);
-            Player copyP = p.copyPlayer();
-            copyState.put(i, copyP);
+            if(p!= null){
+                Player copyP = p.copyPlayer();
+                copyState.put(i, copyP);
+            }
         }
         stack.add(copyState);
     }

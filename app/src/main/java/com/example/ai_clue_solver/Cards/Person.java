@@ -1,4 +1,4 @@
-package Cards;
+package com.example.ai_clue_solver.Cards;
 
 import java.util.NoSuchElementException;
 
@@ -24,6 +24,7 @@ public class Person extends Card {
         return this.value;
     }
 
+    @Override
     public String toString(){
         switch(value){
             case GREEN:

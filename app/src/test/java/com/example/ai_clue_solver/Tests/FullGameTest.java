@@ -1,15 +1,13 @@
-package Tests;
+package com.example.ai_clue_solver.Tests;
 
 import org.junit.Assert;
 import org.junit.Test;
 
-import Cards.Person;
-import Cards.Place;
-import Cards.Thing;
-import Drivers.MainProgram;
-import Players.Envelope;
-import Players.Player.Knowledge;
-import Rummor.Rummor;
+import com.example.ai_clue_solver.Cards.*;
+import com.example.ai_clue_solver.Drivers.MainProgram;
+import com.example.ai_clue_solver.Players.Player.Knowledge;
+import com.example.ai_clue_solver.Players.Envelope;
+import com.example.ai_clue_solver.Rummor.Rummor;
 
 public class FullGameTest {
     

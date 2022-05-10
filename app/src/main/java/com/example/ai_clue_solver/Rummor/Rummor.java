@@ -1,7 +1,6 @@
-package Rummor;
-import Cards.Person;
-import Cards.Place;
-import Cards.Thing;
+package com.example.ai_clue_solver.Rummor;
+
+import com.example.ai_clue_solver.Cards.*;
 
 public class Rummor {
     private Person person;
@@ -26,6 +25,7 @@ public class Rummor {
         return thing;
     }
 
+    @Override
     public String toString(){
         String per;
         String pla;
